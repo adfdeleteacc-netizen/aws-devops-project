@@ -1,0 +1,20 @@
+services:
+  app:
+    image: aws-devops-app:v1
+    container_name: devops-app
+    restart: unless-stopped
+    environment:
+      APP_VERSION: v1
+    expose:
+      - "5000"
+
+  nginx:
+    image: nginx:1.28-alpine
+    container_name: devops-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - app
