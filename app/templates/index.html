@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Jay Chavda - Linux Support Executive, Linux Administration, Server Security and DevOps.">
+<title>Jay Chavda | Linux & DevOps Portfolio</title>
+
+<style>
+:root {
+  --bg: #0b1220;
+  --card: #142137;
+  --text: #edf4ff;
+  --muted: #a9bad0;
+  --accent: #55d6be;
+  --border: #293b54;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #0b1220;
+  border-bottom: 1px solid var(--border);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+nav a:hover { color: var(--accent); }
+
+.hero {
+  padding: 100px 0;
+  background: radial-gradient(circle at 80% 20%, #183c4d, transparent 40%);
+}
+
+.hero small {
+  color: var(--accent);
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 68px);
+  margin: 15px 0;
+  line-height: 1.15;
+}
+
+.hero h1 span { color: var(--accent); }
+
+.hero h2 {
+  color: #c3d3e8;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 750px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: 10px;
+  padding: 12px 22px;
+  border-radius: 7px;
+  background: var(--accent);
+  color: #07151a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+section { padding: 70px 0; }
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.card p, .card li { color: var(--muted); }
+
+.card ul { padding-left: 22px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #1b3048;
+  border: 1px solid #34506b;
+  padding: 8px 13px;
+  border-radius: 6px;
+  color: #d8e9fa;
+  font-size: 14px;
+}
+
+.meta {
+  color: var(--accent);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.contact-box {
+  background: var(--card);
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.contact-box small {
+  display: block;
+  color: var(--muted);
+}
+
+.contact-box a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 25px;
+  text-align: center;
+  color: var(--muted);
+}
+
+@media(max-width: 700px) {
+  nav { flex-direction: column; }
+  nav a { margin: 0 6px; }
+  .grid, .contact-grid { grid-template-columns: 1fr; }
+  .hero { padding: 65px 0; }
+  section { padding: 50px 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+  <div class="logo">JAY CHAVDA</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+<div class="container">
+  <small>LINUX SUPPORT | INFRASTRUCTURE | DEVOPS</small>
+  <h1>Hello, I'm <span>Jay Chavda</span></h1>
+  <h2>Linux Support Executive | Linux Server Administration | Network &amp; Server Security</h2>
+  <p>
+    I am an IT professional passionate about Linux administration,
+    infrastructure support, server security, networking and DevOps.
+    I enjoy troubleshooting systems and building reliable server environments
+    using Docker, Jenkins, AWS and monitoring tools.
+  </p>
+  <p>Limbdi, Surendranagar, Gujarat, India</p>
+  <a class="btn" href="#contact">Contact Me</a>
+  <a class="btn outline" href="#experience">My Experience</a>
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+<p class="section-subtitle">Professional Summary</p>
+
+<div class="card">
+<p>
+Linux Support Executive with 1.3 years of experience at Height 8 Technology,
+with hands-on knowledge of Linux server support, server security, networking,
+broadband technologies and infrastructure troubleshooting.
+</p>
+<br>
+<p>
+Experienced with Linux/Ubuntu administration, ACS Server, TR-069 broadband
+concepts, OLT, switches, ONU/ONT devices, Docker, Jenkins, AWS, Zabbix,
+firewall rules, IPSet restrictions and Fail2Ban configuration.
+</p>
+<br>
+<p>
+Also familiar with PHP development, Laravel, CodeIgniter, Node.js,
+server monitoring, SSH, DNS, SSL, databases, logs, backups and CI/CD fundamentals.
+</p>
+</div>
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+<h2 class="section-title">Professional Experience</h2>
+<p class="section-subtitle">My career journey</p>
+
+<div class="card">
+<h3>Linux Support Executive — Height 8 Technology</h3>
+<div class="meta">1.3 Years</div>
+<ul>
+<li>Provided Linux server administration, monitoring and troubleshooting.</li>
+<li>Monitored CPU, RAM, disk usage, server load, uptime and bandwidth.</li>
+<li>Configured Fail2Ban for protection against unauthorized login attempts.</li>
+<li>Worked with firewall rules and IPSet restrictions.</li>
+<li>Managed SSH access, Linux users, permissions, services and logs.</li>
+<li>Worked with ACS Server and TR-069 broadband technologies.</li>
+<li>Handled OLT, switches, ONU/ONT and connectivity troubleshooting.</li>
+<li>Worked with Docker, Jenkins, Git, AWS and Zabbix.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>PHP Developer — Brahma Technolab</h3>
+<div class="meta">Web Application Development</div>
+<ul>
+<li>Developed and maintained web applications using PHP.</li>
+<li>Worked with Laravel and CodeIgniter frameworks.</li>
+<li>Worked with Node.js for backend development requirements.</li>
+<li>Handled database integration, APIs, debugging and testing.</li>
+<li>Supported application maintenance and deployment activities.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>DevOps / Deployment Experience — Technozman Solutions</h3>
+<div class="meta">Application Deployment &amp; Infrastructure</div>
+<ul>
+<li>Managed application deployments on physical and cloud servers.</li>
+<li>Performed deployments focusing on minimal or zero downtime.</li>
+<li>Worked with Docker, Jenkins, Git and Linux automation.</li>
+<li>Supported server configuration, monitoring and troubleshooting.</li>
+<li>Assisted with application availability and reliable releases.</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<h2 class="section-title">Technical Skills</h2>
+<p class="section-subtitle">Technologies and tools</p>
+
+<div class="card">
+<h3>Linux &amp; System Administration</h3>
+<div class="skills">
+<span>Linux</span><span>Ubuntu</span><span>Red Hat Linux</span>
+<span>Unix</span><span>Windows</span><span>SSH</span>
+<span>Users &amp; Permissions</span><span>Cron Jobs</span>
+<span>Server Troubleshooting</span>
+</div>
+<br>
+
+<h3>Server Security &amp; Networking</h3>
+<div class="skills">
+<span>Fail2Ban</span><span>Firewall</span><span>IPSet</span>
+<span>SSH Hardening</span><span>OLT</span><span>Switches</span>
+<span>ONU/ONT</span><span>TR-069</span><span>Wireshark</span>
+</div>
+<br>
+
+<h3>DevOps &amp; Cloud</h3>
+<div class="skills">
+<span>Docker</span><span>Jenkins</span><span>Git</span>
+<span>GitHub</span><span>CI/CD</span><span>AWS</span>
+<span>Cloud Infrastructure</span><span>Server Automation</span>
+</div>
+<br>
+
+<h3>Programming &amp; Development</h3>
+<div class="skills">
+<span>PHP</span><span>Laravel</span><span>CodeIgniter</span>
+<span>Node.js</span><span>Python</span><span>Bash</span>
+<span>PowerShell</span>
+</div>
+<br>
+
+<h3>Monitoring, Web &amp; Databases</h3>
+<div class="skills">
+<span>Zabbix</span><span>Nginx</span><span>Apache</span>
+<span>SSL</span><span>DNS</span><span>MySQL</span>
+<span>PostgreSQL</span><span>Log Analysis</span>
+<span>Backup &amp; Restore</span><span>SMTP</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<h2 class="section-title">Projects</h2>
+<p class="section-subtitle">Selected work</p>
+
+<div class="grid">
+<div class="card">
+<h3>Quiz Application</h3>
+<p>Developed an application demonstrating programming logic and automation concepts.</p>
+</div>
+
+<div class="card">
+<h3>News Application</h3>
+<p>Built an application using API integration and updated news content.</p>
+</div>
+
+<div class="card">
+<h3>E-Commerce Shopping Website</h3>
+<p>Implemented a shopping website with a user-friendly experience and secure transactions.</p>
+</div>
+
+<div class="card">
+<h3>AWS Docker CI/CD Project</h3>
+<p>
+Built and deployed a Flask application using Docker, Docker Hub,
+GitHub Actions, AWS EC2, IAM OIDC and AWS Systems Manager.
+Automated application deployment through a CI/CD pipeline.
+</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+<h2 class="section-title">Education &amp; Certifications</h2>
+<p class="section-subtitle">Academic background and professional learning</p>
+
+<div class="grid">
+<div class="card">
+<h3>Master of Computer Applications (MCA)</h3>
+<div class="meta">LJ University, Ahmedabad | 2023–2025</div>
+
+<h3>Bachelor of Science in Information Technology</h3>
+<div class="meta">Shree Swami Vivekanand College, Surendranagar | 2021–2023</div>
+</div>
+
+<div class="card">
+<h3>Certifications</h3>
+<ul>
+<li>Red Hat Linux — System Administration, Grass Solution Pvt.</li>
+<li>AWS Certification — Cloud principles and hands-on deployment knowledge.</li>
+<li>Software Testing — Manual and automated testing via Coursera.</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<h3>Core Competencies</h3>
+<p>
+Linux Administration · DevOps · Application Deployment · Cloud Infrastructure ·
+Server Security · Fail2Ban · Firewall &amp; IPSet · Docker · Jenkins · AWS ·
+Zabbix · Networking · DNS · SSL
+</p>
+<br>
+<h3>Soft Skills</h3>
+<p>Teamwork · Adaptability · Leadership · Work Ethics · Active Learning · Problem Solving</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2 class="section-title">Let's Connect</h2>
+<p class="section-subtitle">Feel free to contact me for professional opportunities and collaboration.</p>
+
+<div class="contact-grid">
+<div class="contact-box">
+<small>Email</small>
+<a href="mailto:jaychavda3231@gmail.com">jaychavda3231@gmail.com</a>
+</div>
+
+<div class="contact-box">
+<small>Phone</small>
+<a href="tel:+919106236316">+91 91062 36316</a>
+</div>
+
+<div class="contact-box">
+<small>LinkedIn</small>
+<a href="https://www.linkedin.com/in/jay-chavda-a28945233/" target="_blank" rel="noopener noreferrer">View LinkedIn Profile</a>
+</div>
+</div>
+
+<p style="color:var(--muted);margin-top:20px">
+Limbdi, Surendranagar, Gujarat, India
+</p>
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Jay Chavda | Personal Portfolio</p>
+<p>Built with Python Flask, Docker and AWS EC2</p>
+</footer>
+
+</body>
+</html>
