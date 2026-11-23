@@ -1,10 +1,11 @@
+
 services:
   app:
-    image: aws-devops-app:v1
+    image: ${DOCKERHUB_USERNAME}/aws-devops-project:latest
     container_name: devops-app
     restart: unless-stopped
     environment:
-      APP_VERSION: v1
+      APP_VERSION: latest
     expose:
       - "5000"
 
